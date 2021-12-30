@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+room_names = ['松', '竹', '梅']
+room_image_names = ['matsu.png', 'take.png', 'ume.png',]
+3.times do |n|
+  Room.create(name: room_names[n], image_name: room_image_names[n])
+end

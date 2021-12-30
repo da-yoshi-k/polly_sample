@@ -1,0 +1,9 @@
+<div class="card col-md-3 mx-3 mb-3">
+  <%= image_tag room.image_name, class: 'card-img-top', size: :auto %>
+  <div class="card-body text-center">
+    <h4 class="card-title">
+      <%= room.name %>
+    </h4>
+    <%= link_to '入室する', room, class:'btn btn-primary' %>
+  </div>
+</div>
