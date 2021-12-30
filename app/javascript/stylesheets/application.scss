@@ -1,0 +1,74 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700');
+
+body {
+  padding: 2rem 1.5rem;
+  color: #333;
+  // change font
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  line-height: 1.8;
+}
+
+section {
+  header {
+    margin-bottom: 1rem;
+  }
+  
+  & + & {
+    margin-top: 4rem;
+  }
+}
+
+.sub-title {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+// change radius
+.alert,
+.btn,
+.form-control {
+  border-radius: 0.125rem;
+}
+
+// change button color
+.btn-primary {
+  background-color: #5d9cec !important;
+  border-color: #468ee9 !important;
+  &:hover {
+    background-color: #2f80e7 !important;
+    border-color: #196ed9 !important;
+  }
+}
+.btn-success {
+  background-color: #a0d468 !important;
+  border-color: #94ce54 !important;
+  &:hover {
+    background-color: #87c940 !important;
+    border-color: #75b233 !important;
+  }
+}
+.btn-info {
+  background-color: #22b1e3 !important;
+  border-color: #199bc8 !important;
+  &:hover {
+    background-color: #22b1e3 !important;
+    border-color: #199bc8 !important;
+  }
+}
+.btn-warning {
+  background-color: #ffce54 !important;
+  border-color: #ffc73a !important;
+  &:hover {
+    background-color: #ffbf21 !important;
+    border-color: #fcb400 !important;
+  }
+}
+.btn-danger {
+  background-color: #ed5565 !important;
+  border-color: #eb3e50 !important;
+  &:hover {
+    background-color: #e8273b !important;
+    border-color: #d5172b !important;
+  }
+}
