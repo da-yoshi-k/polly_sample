@@ -1,11 +1,13 @@
+<%= link_to "部屋選択に戻る", rooms_path, class: "btn btn-primary text-left" %>
 <div class="container text-center">
+  <br>
   <%= image_tag @room.image_name, size: :auto %>
   <h3 class="text-center">
     <%= @room.name %>
   </h3>
+  <%= render 'messages/form', { room: @room, message: @message } %>
   <div>
-    <div class="mb-2">メッセージ1</div>
-    <div class="mb-2">メッセージ2</div>
-    <div class="mb-2">メッセージ3</div>
+    <h4>▼メッセージ</h4>
+    <%= render @messages, partial: 'messages/_message' %>
   </div>
 </div>
