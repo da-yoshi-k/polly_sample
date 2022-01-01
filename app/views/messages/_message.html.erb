@@ -1,3 +1,6 @@
 <div class="container mb-3">
-  <%= message.body %>
+  <audio controls src=<%= ENV['CLOUDFRONT_BASE_URL'] + message.audio_file_name %> controlslist="nodownload"></audio>
+  <h3>
+    <%= message.body %>
+  </h3>
 </div>

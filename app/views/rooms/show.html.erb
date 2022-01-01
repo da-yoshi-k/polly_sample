@@ -6,8 +6,6 @@
     <%= @room.name %>
   </h3>
   <%= render 'messages/form', { room: @room, message: @message } %>
-  <div>
-    <h4>▼メッセージ</h4>
-    <%= render @messages, partial: 'messages/_message' %>
-  </div>
+  <h4>▼メッセージ</h4>
+  <%= render @messages, partial: 'messages/_message' %>
 </div>
