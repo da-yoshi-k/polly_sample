@@ -1,11 +1,12 @@
 <%= link_to "部屋選択に戻る", rooms_path, class: "btn btn-primary text-left" %>
-<div class="container text-center">
+<div class="container">
   <br>
-  <%= image_tag @room.image_name, size: :auto %>
+  <%= image_tag @room.image_name, size: :auto, class: 'd-block mx-auto'%>
   <h3 class="text-center">
     <%= @room.name %>
   </h3>
   <%= render 'messages/form', { room: @room, message: @message } %>
-  <h4>▼メッセージ</h4>
+  <h3 class="text-center mb-3"><u>メッセージ</u></h3>
   <%= render @messages, partial: 'messages/_message' %>
 </div>
+<%= javascript_pack_tag 'audio' %>
